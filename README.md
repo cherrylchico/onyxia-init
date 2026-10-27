@@ -16,10 +16,9 @@ every new service is ready to use without manual setup.
 - Shows each cell's last run time and duration
 
 ### Claude login
-- Reads `CLAUDE_CODE_OAUTH_TOKEN` from the Onyxia secret `claude` (or from the
-  environment, if that secret is injected via the service's Vault tab) and
-  writes it to the `env` block of `~/.claude/settings.json`, so the Claude Code
-  extension starts already logged in
+- Takes `CLAUDE_CODE_OAUTH_TOKEN` from the Onyxia secret `claude` (injected as
+  an environment variable) and writes it to the `env` block of
+  `~/.claude/settings.json`, so the Claude Code extension starts already logged in
 
 ### Appearance
 - Uses the **Default Dark Modern** theme
